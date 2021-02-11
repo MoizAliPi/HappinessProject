@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Shape from "../Shape";
-
+import { getCountryData } from "../Services/country";
 //import assets
 import { mdiChevronDown, mdiChevronUp } from "@mdi/js";
 import Icon from "@mdi/react";
@@ -22,7 +22,7 @@ const Stencil = (props) => {
     
     const [country, setCountry] = useState('Select a country');
     const [display, setListDisplay] = useState(false);
-    const [countryData, setCountryData] = useState('');
+    const [countryData, setCountryData] = useState();
 
     function toggleList(){
         setListDisplay(!display);
@@ -36,35 +36,19 @@ const Stencil = (props) => {
 
     useEffect(() => {
          // GET request using fetch inside useEffect React hook
-         fetch('https://happyie-project.herokuapp.com/country?name='+country)
-         .then(response => response.json())
-         .then(data => setCountryData(data))
-         .then(console.log(countryData));
-    
+         console.log(country)
+         console.log("Country data change in effect..")
+        let mounted = true;
+        getCountryData(country)
+        .then(data => {
+            if(mounted) {
+                setCountryData(data)
+            }
+        })
+        console.log(countryData);
+        return () => mounted = false;
     // empty dependency array means this effect will only run once (like componentDidMount in classes)
     }, [country]);
-
-    function getData(){
-        // GET request using fetch with error handling
-        fetch('https://happyie-project.herokuapp.com/country?name='+country)
-        .then(async response => {
-            const data = await response.json();
-
-            // check for error response
-            if (!response.ok) {
-                // get error message from body or default to response statusText
-                const error = (data && data.message) || response.statusText;
-                return Promise.reject(error);
-            }
-            setCountryData(data)
-            console.log(countryData)
-        })
-        .catch(error => {
-            this.setState({ errorMessage: error.toString() });
-            console.error('There was an error!', error);
-        }); 
-    }
-
     
     return (
         <div className={styles.stencilBox}>
@@ -80,7 +64,7 @@ const Stencil = (props) => {
                     </div>
                 </div>
                 <div className={styles.draggableShapes}>
-                    Draggable Shapes
+                    {JSON.stringify(countryData)}
                 </div>
            </div>
            <div className={styles.dropBox}>

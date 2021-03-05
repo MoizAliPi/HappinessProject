@@ -1,10 +1,11 @@
 import './App.css';
-import MainPage from './MainPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import HomePage from './HomePage';
 
 function App() {
   return (
     <div className="App">
-      <MainPage />
+      <HomePage />
     </div>
   );
 }

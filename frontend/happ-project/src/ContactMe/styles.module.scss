@@ -1,0 +1,96 @@
+.aboutBtn{
+    background-color: #FFB61B;
+    color: #006990;
+    font-family: 'Sniglet', cursive;
+    padding: 7px 40px;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 2px 1px #bbb; */
+    margin: 10px;
+    border: 0px;
+    font-size: 25px;
+}
+
+.aboutBtn:hover{
+    background-color: #006990;
+    color: #FFB61B;
+}
+
+button:focus {
+    outline: none;
+}
+
+.avatarImg{
+    padding: 10px;
+}
+
+.avatarImg > img{
+    width: 120px;
+    height: 100%;
+}
+
+.aboutMe{
+    color:#FFB61B;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.contactInfo{
+    position: absolute;
+    top: 107px;
+    left: 120%;
+    background-color: #006990;
+    box-shadow: 0px 0px 2px 1px #bbb;
+    width: 180%;
+    height: 70%;
+    border-radius: 20px;
+    z-index: 9999;
+}
+
+.infoBox{
+    margin: 25px;
+    border: 2px solid #D7DF21;
+    font-family: 'Sniglet', cursive;
+    text-align: center;
+    height: 90%;
+    border-radius: 20px;
+}
+
+.closeInfo{
+    background-color:#D7DF21;
+    color: white;
+    position: absolute;
+    border: 0px;
+    border-radius: 15px;
+    top: -4%;
+    right: -2%;
+}
+
+.closeIcon{
+    width: 30px;
+    height: 35px;
+}
+
+.typeFormBtn > button{
+    background-color: #D7DF21;
+    color: #9F388A;
+    font-family: 'Sniglet', cursive;
+    padding: 7px 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px 1px #bbb; 
+    margin: 5px;
+    border: 0px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.typeFormBtn > button:hover{
+    box-shadow: 0px 0px 6px 3px #bbb; 
+}
+
+.show{
+    display: initial;
+}
+
+.noShow{
+    display: none;
+}

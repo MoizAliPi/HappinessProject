@@ -23,6 +23,9 @@ def get_country():
     countryName = request.args.get('name')
     happDf = pd.read_csv("Data/2020.csv")
     rsltDf = happDf[happDf["CountryName"] == countryName]
+    idxx = rsltDf.iloc[0]["Rank"]-1
+    rsltDf = rsltDf.rename(index={idxx: 'data'})
+    print(rsltDf)
     return rsltDf.to_json()
 
 

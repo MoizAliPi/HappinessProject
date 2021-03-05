@@ -1,11 +1,11 @@
 .main{
-    margin: 30px 75px;
-    background-color: #fff;
-    height: 100%;
-    border-radius: 25px;
-    padding: 20px 30px;
-    box-shadow: 0px 0px 4px 2px #bbb;
-    position: relative;
+    // margin: 30px 75px;
+    // background-color: #fff;
+    // height: 100%;
+    // border-radius: 25px;
+    // padding: 20px 30px;
+    // box-shadow: 0px 0px 4px 2px #bbb;
+    // position: relative;
 }
 
 .heading{
@@ -18,7 +18,7 @@
 
 .heading > h3{
     font-family: 'Sniglet', cursive;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     color:#FFB61B;
     margin: 10px;
@@ -26,15 +26,14 @@
 
 .infoHeader{
     margin-bottom: 20px;
-    margin-top: 25px;
+    margin-top: 20px;
     color: #006990;
     font-family: 'Sniglet', cursive;
     font-size: 30px;
 }
 
 .infoButtons{
-    margin-top: 10px;
-    display: inline-flex;
+    margin-bottom: 15px;
     padding: 5px;
 }
 
@@ -42,16 +41,17 @@
     background-color: #FFB61B;
     color: #006990;
     font-family: 'Sniglet', cursive;
-    padding: 10px 30px;
+    padding: 10px 22px;
     border-radius: 30px;
-    box-shadow: 0px 0px 2px 1px #bbb;
-    margin: 5px 25px;
+    /* box-shadow: 0px 0px 2px 1px #bbb; */
+    margin: 20px 15px;
     border: 0px;
     font-size: 25px;
 }
 
 .infoButtons > div > button:hover{
-    box-shadow: 0px 0px 4px 2px #bbb;
+    background-color: #006990;
+    color: #FFB61B;
 }
 
 button:focus {
@@ -60,14 +60,14 @@ button:focus {
 
 .kidsInfo{
     position: absolute;
-    top: 145px;
-    right: 225px;
+    top: 107px;
+    left: 25vw;
     background-color: #D7DF21;
     box-shadow: 0px 0px 4px 2px #bbb;
-    width: 60%;
-    height: 60%;
+    width: 200%;
+    height: 65%;
     border-radius: 20px;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .infoBox{
@@ -92,7 +92,7 @@ button:focus {
     font-size: 22px;
     color: #006990;
     align-items: center;
-    margin: 75px 15px;
+    margin: 45px 15px;
 }
 
 .slideBtns{
@@ -185,14 +185,14 @@ button:focus {
 
 .notKidsInfo{
     position: absolute;
-    top: 145px;
-    right: 145px;
+    top: 80px;
+    left: 25vw;
     background-color: #D7DF21;
     box-shadow: 0px 0px 4px 2px #bbb;
-    width: 75%;
-    height: 70%;
+    width: 225%;
+    height: 80%;
     border-radius: 20px;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .notKidsPage{
@@ -205,8 +205,19 @@ button:focus {
     display: grid;
     grid-template-columns: 0.6fr 0.4fr;
     grid-gap: 5px;
-    margin: 55px 15px;
+    margin: 35px 15px;
     font-size: 22px;
+    align-items: center;
+}
+
+.taskImg{
+    width: 100%;
+    height: auto;
+}
+
+.infoImg > img{
+    width: 100%;
+    height: auto;
 }
 
 .show{

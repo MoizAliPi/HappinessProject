@@ -1,0 +1,191 @@
+.heading{
+    background-color:#9F388A;
+    border-radius: 35px;
+    padding: 5px 15px;
+    border: 0px;
+    margin: 0px 50px;
+}
+
+.heading > h3{
+    font-family: 'Sniglet', cursive;
+    font-size: 40px;
+    font-weight: 600;
+    color:#FFB61B;
+    margin: 10px;
+}
+
+.infoHeader{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #006990;
+    font-family: 'Sniglet', cursive;
+    font-size: 30px;
+}
+
+.infoButtons{
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.shapeBtn{
+    margin-top: 53px;
+}
+
+.shapeBtn > button{
+    background-color: #006990;
+    color: #FFB61B;
+    font-family: 'Sniglet', cursive;
+    padding: 7px 50px;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 2px 1px #bbb; */
+    margin: 10px;
+    border: 0px;
+    font-size: 25px;
+}
+
+.shapeBtn > button:hover{
+    background-color: #FFB61B;
+    color: #006990;
+}
+
+button:focus {
+    outline: none;
+}
+
+.shapeImg{
+    width: 250px;
+    height: 100%;
+}
+
+.shapesInfo{
+    position: absolute;
+    top: 107px;
+    right: 100px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px 1px #bbb;
+    width: 100%;
+    height: 65%;
+    border-radius: 20px;
+    z-index: 9999;
+}
+
+.infoBox{
+    margin: 25px;
+    border: 2px solid #D7DF21;
+    font-family: 'Sniglet', cursive;
+    text-align: center;
+    height: 87%;
+    border-radius: 20px;
+}
+
+.shapeName{
+    color: #006990;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.shapeDetails{
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-gap: 5px;
+    font-size: 22px;
+    color: #9F388A;
+    align-items: center;
+    margin: 40px 10px;
+}
+
+.shapeBtns{
+    display: inline-flex;
+    margin: 10px;
+    width: 100%;
+}
+
+.prevBtn, .nextBtn{
+    font-size: 24px;
+    background-color: #FFB61B;
+    color: #006990;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 10px 35px;
+    box-shadow: 0px 0px 2px 1px #bbb;
+    border: 0px;
+    width: 100%;
+    font-family: 'Sniglet', cursive;
+    position: relative;
+    margin: 10px;
+}
+
+.prevBtn{
+    text-align: center;
+}
+
+.nextBtn{
+    text-align: center;
+    margin-right: 20px;
+}
+
+.prevBtn:hover{
+    box-shadow: -3px 4px 6px 3px #bbb;
+}
+
+.nextBtn:hover{
+    box-shadow: 3px 4px 6px 3px #bbb;
+}
+
+.toggleIcon{
+    position: absolute;
+    right: 2%;
+    width: 40px;
+    height: 30px;
+    top: 22%;
+}
+
+.toggleLeftIcon{
+    position: absolute;
+    left: 0%;
+    width: 40px;
+    height: 30px;
+    top: 22%;
+}
+
+.goInfo{
+    font-size: 24px;
+    background-color: #D7DF21;
+    color: #006990;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 10px 25px;
+    box-shadow: 0px 0px 2px 1px #bbb;
+    border: 0px;
+    width: 100%;
+    font-family: 'Sniglet', cursive;
+    margin-right: 25px;
+}
+
+.goInfo:hover{
+    box-shadow: 0px 0px 6px 3px #bbb;
+}
+
+.closeInfo{
+    background-color:#D7DF21;
+    color: white;
+    position: absolute;
+    border: 0px;
+    border-radius: 15px;
+    top: -4%;
+    right: -2%;
+}
+
+.closeIcon{
+    width: 30px;
+    height: 35px;
+}
+
+.show{
+    display: initial;
+}
+
+.noShow{
+    display: none;
+}

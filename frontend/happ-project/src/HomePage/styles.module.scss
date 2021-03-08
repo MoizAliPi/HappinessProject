@@ -49,3 +49,22 @@
     // background-position: initial;
     // background-repeat: no-repeat;
 }
+
+.smallContainer{
+    height: 100vh;
+    background: url("../Assets/shapesbkgnd.png");
+    background-size: contain;
+    background-position: initial;
+    background-repeat: no-repeat;
+}
+
+.smallMessage{
+    font-family: "Sniglet", cursive;
+}
+
+.smallMessage > h2{
+    font-size: 36px;
+    color: #9F388A;
+    padding: 30px;
+    padding-top: 150px;
+}

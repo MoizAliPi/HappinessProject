@@ -96,9 +96,9 @@ const ShapeInfo = () => {
                             <div className={styles.shapeDetails}>
                                 <div><img className={styles.shapeImg} src={Rectangle} alt="Rectangle image"/></div>
                                 <div className={styles.shapeInfo}>
-                                   Rectangle tells us that how much people cheat or steal candies if they can not get one <br/><br/>
-                                   So... if the rectangle is BIG then it means many people steal candies and if the rectangle is SMALL then 
-                                   it means less people steal candies.
+                                    Rectangle tells us that how much people are healthy in this country that means they
+                                    don't eat a lot of candies! <br/><br/> So... if the Rectangle is BIG then many people are living a
+                                    healthy life and if the Rectangle is SMALL then less people are living a healthy life.
                                 </div>
                             </div>
                             <div className={styles.shapeBtns}>
@@ -111,9 +111,9 @@ const ShapeInfo = () => {
                             <div className={styles.shapeDetails}>
                                 <div><img className={styles.shapeImg} src={Triangle} alt="Triangle image"/></div>
                                 <div className={styles.shapeInfo}>
-                                    Triangle tells us that how much people are healthy in this country that means they
-                                    don't eat a lot of candies! <br/><br/> So... if the triangle is BIG then many people are living a
-                                    healthy life and if the triangle is SMALL then less people are living a healthy life.
+                                   Triangle tells us that how much people cheat or steal candies if they can not get one <br/><br/>
+                                   So... if the Triangle is BIG then it means many people steal candies and if the Triangle is SMALL then 
+                                   it means less people steal candies.
                                 </div>
                             </div>
                             <div className={styles.shapeBtns}>

@@ -181,7 +181,7 @@ const InfoPage = () => {
                                 <div className={styles.infoText}>
                                     So a shape with smaller than the standard size will mean that country needs to improve that category where as for any size bigger than
                                     standard will not require adjustment(except percept of corruption). Just to simply tell them what is required  
-                                    to make their country a little bit happier. Click <span><a href="#"> here </a></span> to know more about it.
+                                    to make their country a little bit happier. Click <span><a target="_blank" href="https://mapirani-96.medium.com/finding-happiness-analysis-of-world-happiness-report-2020-cad1f5b59987"> here </a></span> to know more about it.
                                 </div>
                                 <div className={styles.infoImg}>
                                     <img src={stepThree} alt="stencil3 image"/>

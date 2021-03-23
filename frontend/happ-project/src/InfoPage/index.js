@@ -4,17 +4,19 @@ import Stencil from "../Stencil";
 //import assets
 import { mdiChevronRight, mdiChevronLeft, mdiClose } from "@mdi/js";
 import Icon from "@mdi/react";
-import stepOne from "../Assets/Steps/countrySelect.jpg";
-import stepTwo from "../Assets/Steps/dragShapes.jpg";
-import stepThree from "../Assets/Steps/stepThree.png";
-import stepFour from "../Assets/Steps/shapeInfo.jpg";
+import stepOne from "../Assets/Steps/gif1.gif";
+import stepTwo from "../Assets/Steps/gif2.gif";
+import stepThree from "../Assets/Steps/gif3.gif";
+import stepFour from "../Assets/Steps/gif4.gif";
+import stepFive from "../Assets/Steps/gif5.gif";
+
 
 
 //import styles
 import styles from "./styles.module.scss";
 
 const InfoPage = () => {
-    const [showKidsInfo, setKidsInfoToggle] = useState(false);
+    const [showKidsInfo, setKidsInfoToggle] = useState(true);
     const [showNotKidsInfo, setNotKidsInfoToggle] = useState(false);
     const [taskSlider, setCurrentTask] = useState([true, false, false, false]);
     const [infoSlider, setCurrentInfo] = useState([true, false, false]);
@@ -100,8 +102,9 @@ const InfoPage = () => {
                         <h3 className={styles.tipsHeading}>Okay, so what to do?</h3>
                         <div className={`${styles.task} ${taskSlider[0] ? styles.show : styles.noShow}`}>
                             <div className={styles.taskDetails}>
-                                <div className={styles.taskInfo}>1. Select the country from the list at the top corner.</div>
-                                <div><img className={styles.taskImg} src={stepOne} alt="select country image"/></div>
+                                <div><img className={styles.taskImg} src={stepFive} alt="select country image"/></div>
+                                <div className={styles.taskInfo}>Hi there, So glad to see you here learning more about happiness
+                                just follow the steps ahead and you will quickly get through on how to do it! Hope you like it.</div>
                             </div>
                             <div className={styles.slideBtns}>
                                 <button className={styles.nextBtn} id="0" onClick={toggleRightSlide}>Go to next step <Icon path={mdiChevronRight} className={styles.toggleIcon}/></button>
@@ -109,8 +112,8 @@ const InfoPage = () => {
                         </div>
                         <div className={`${styles.task} ${taskSlider[1] ? styles.show : styles.noShow}`}>
                             <div className={styles.taskDetails}>
-                                <div className={styles.taskInfo}>2. Click the shapes below and drag them to their similar holes.</div>
-                                <div><img className={styles.taskImg} src={stepTwo} alt="Drag and drop image"/></div>
+                                <div><img className={styles.taskImg} src={stepOne} alt="select country image"/></div>
+                                <div className={styles.taskInfo}>1. Select the country from the list at the top corner.</div>
                             </div>
                             <div className={styles.slideBtns}>
                                 <button className={styles.prevBtn} id="1" onClick={toggleLeftSlide}><Icon path={mdiChevronLeft} className={styles.toggleLeftIcon}/>Go to previous step </button>
@@ -119,11 +122,8 @@ const InfoPage = () => {
                         </div>
                         <div className={`${styles.task} ${taskSlider[2] ? styles.show : styles.noShow}`}>
                             <div className={styles.taskDetails}>
-                                <div className={styles.taskInfo}>3. It's a magical stencil and it will fit any size of the shape! <br/>
-                                 Wonder why each shape is of different size for every country?? (Next step tells that) </div>
-                                <div>
-                                    <img className={styles.taskImg} src={stepThree} alt="changing shape size image"/>
-                                </div>
+                                <div><img className={styles.taskImg} src={stepTwo} alt="Drag and drop image"/></div>
+                                <div className={styles.taskInfo}>2. Click the shapes below and drag them to their similar holes.</div>
                             </div>
                             <div className={styles.slideBtns}>
                                 <button className={styles.prevBtn} id="2" onClick={toggleLeftSlide}><Icon path={mdiChevronLeft} className={styles.toggleLeftIcon}/>Go to previous step </button>
@@ -132,11 +132,22 @@ const InfoPage = () => {
                         </div>
                         <div className={`${styles.task} ${taskSlider[3] ? styles.show : styles.noShow}`}>
                             <div className={styles.taskDetails}>
-                                <div className={styles.taskInfo}>4. Click the 'about shapes' button to know what each shape tells us!</div>
-                                <div><img className={styles.taskImg} src={stepFour} alt="pointing to the shape image"/></div>
+                                <div><img className={styles.taskImg} src={stepThree} alt="changing shape size image"/></div>
+                                <div className={styles.taskInfo}>3. It's a magical stencil and it will fit any size of the shape! <br/>
+                                 Wonder why each shape is of different size for every country?? (Next step tells that) </div>
                             </div>
                             <div className={styles.slideBtns}>
                                 <button className={styles.prevBtn} id="3" onClick={toggleLeftSlide}><Icon path={mdiChevronLeft} className={styles.toggleLeftIcon}/>Go to previous step </button>
+                                <button className={styles.nextBtn} id="3" onClick={toggleRightSlide}>Go to next step <Icon path={mdiChevronRight} className={styles.toggleIcon}/></button>
+                            </div>
+                        </div>
+                        <div className={`${styles.task} ${taskSlider[4] ? styles.show : styles.noShow}`}>
+                            <div className={styles.taskDetails}>
+                                <div><img className={styles.taskImg} src={stepFour} alt="pointing to the shape image"/></div>
+                                <div className={styles.taskInfo}>4. Hover over each shape to know what it tells us!</div>
+                            </div>
+                            <div className={styles.slideBtns}>
+                                <button className={styles.prevBtn} id="4" onClick={toggleLeftSlide}><Icon path={mdiChevronLeft} className={styles.toggleLeftIcon}/>Go to previous step </button>
                                 <button className={styles.goInfo} onClick={toggleKidsInfo}>Eazy Peezy!!</button>
                             </div>
                         </div> 

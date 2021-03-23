@@ -64,8 +64,8 @@ button:focus {
     left: 25vw;
     background-color: #D7DF21;
     box-shadow: 0px 0px 4px 2px #bbb;
-    width: 200%;
-    height: 65%;
+    width: 210%;
+    height: 75%;
     border-radius: 20px;
     z-index: 9999;
 }
@@ -87,12 +87,12 @@ button:focus {
 
 .taskDetails{
     display: grid;
-    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 0.8fr 0.2fr;
     grid-gap: 5px;
     font-size: 22px;
     color: #006990;
     align-items: center;
-    margin: 45px 15px;
+    margin: 15px;
 }
 
 .slideBtns{
@@ -211,8 +211,8 @@ button:focus {
 }
 
 .taskImg{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 220px;
 }
 
 .infoImg > img{

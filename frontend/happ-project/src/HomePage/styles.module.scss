@@ -1,70 +1,71 @@
 @import "~bootstrap/scss/bootstrap";
 
-.mainContainer{
-    //border: 1px solid black;
-    height: 100vh;
-    flex-flow: column;
+.mainContainer {
+  //border: 1px solid black;
+  height: 100vh;
+  flex-flow: column;
 }
 
-.mainRow{
-    height: 100%;
+.mainRow {
+  height: 100%;
 }
 
-.menuCol{
-    //border: 1px solid red;
-    height: 100%;
-    background-color: #9F388A;
-    padding: 25px;
+.menuCol {
+  //border: 1px solid red;
+  height: 100%;
+  background-color: #e56399;
+  padding: 25px;
 }
 
-.heading{
-    background-color:#FFB61B;
-    border-radius: 25px;
-    padding: 5px 10px;
-    border: 0px;
-    margin-top: 25px;
+.heading {
+  background-color: #facc41;
+  border-radius: 25px;
+  padding: 5px 10px;
+  border: 0px;
+  margin-top: 25px;
 }
 
-.heading > h3{
-    font-family: 'Sniglet', cursive;
-    font-size: 30px;
-    font-weight: 600;
-    color:#9F388A;
-    margin: 10px;
+.heading > h3 {
+  font-family: "Sniglet", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  color: #e56399;
+  margin: 10px;
 }
 
-.infoHeader{
-    margin-bottom: 20px;
-    margin-top: 100px;
-    color: #D7DF21;
-    font-family: 'Sniglet', cursive;
-    font-size: 30px;
+.infoHeader {
+  margin-bottom: 20px;
+  margin-top: 100px;
+  color: #facc41;
+  font-family: "Sniglet", cursive;
+  font-size: 30px;
 }
 
 .stencilCol {
-    //border: 1px solid blue;
-    height: 100%;
-    // background: url("../Assets/shapes-bkgnd.png");
-    // background-size: contain;
-    // background-position: initial;
-    // background-repeat: no-repeat;
+  //border: 1px solid blue;
+  height: 100%;
+  // background: url("../Assets/shapes-bkgnd.png");
+  // background-size: contain;
+  // background-position: initial;
+  // background-repeat: no-repeat;
+  background-color: #ece2d0;
 }
 
-.smallContainer{
-    height: 100vh;
-    background: url("../Assets/shapesbkgnd.png");
-    background-size: contain;
-    background-position: initial;
-    background-repeat: no-repeat;
+.smallContainer {
+  height: 100vh;
+  background: url("../Assets/shapesbkgnd.png");
+  background-size: contain;
+  background-position: initial;
+  background-repeat: no-repeat;
 }
 
-.smallMessage{
-    font-family: "Sniglet", cursive;
+.smallMessage {
+  font-family: "Sniglet", cursive;
 }
 
-.smallMessage > h2{
-    font-size: 36px;
-    color: #9F388A;
-    padding: 30px;
-    padding-top: 150px;
+.smallMessage > h2 {
+  font-size: 36px;
+  color: #e56399;
+  padding: 30px;
+  padding-top: 150px;
 }
